@@ -1,0 +1,22 @@
+{
+    "content_scripts": [
+        {
+            "matches": ["https://www.facebook.com/"],
+            "css": ["fix.css"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["https://www.facebook.com/"],
+            "js": ["./scripts/script.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "manifest_version": 2,
+    "name": "Facebook for Concetrating",
+    "description": "Facebook for Concetrating",
+    "version": "1.0",
+    "action": {
+      "default_popup": "./popup/popup.html",
+      "default_icon": "./images/icon.png"
+    }
+}
